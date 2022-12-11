@@ -28,7 +28,7 @@ class MobileNet(Model):
         self.input_shape_ = input_shape_
 
         self.model = Sequential()
-        
+
         ## Input Layers
         self.model.add(Input(shape=self.input_shape_))
         self.model.add(
@@ -90,7 +90,7 @@ class MobileNet(Model):
                 data_format="channels_first",
             )
         )
-        #self.model.add(Flatten())
+        # self.model.add(Flatten())
 
         if self.num_classes == 2:
             self.model.add(
