@@ -261,7 +261,7 @@ class MobileNet(Model):
         self.avg_pool = GlobalAveragePooling2D(
 #             pool_size = 7,
 #             strides = 1,
-            data_format = "channels_first",
+#            data_format = "channels_first",
         )
 
         ##Output 
